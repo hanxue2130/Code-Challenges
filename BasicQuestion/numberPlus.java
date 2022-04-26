@@ -4,7 +4,7 @@ package AllwithDescription.test;
 //    and the addition of several numbers is controlled by the keyboard.
 public class NumberPlus {
     public static void main(String[] args) {
-        method1();
+        method2();
     }
     public static void method1(){
         int a = 1, b = 5, c = a;
@@ -17,4 +17,22 @@ public class NumberPlus {
             }
         }
     }
+    public static void method2(){
+        int a = 2;
+        int b = 5;
+        System.out.print(a);
+        for (int i = 1; i <= b; i++) {
+            int count = i;
+            int tem = 0;
+            a = 2;
+            while(count!=0){
+                a = a * 10;
+                tem += a;
+                count--;
+            }
+            tem += 2;
+            System.out.print("+" + tem);
+        }
+    }
+
 }
